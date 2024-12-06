@@ -111,16 +111,15 @@ function App() {
           <h2>Abstract</h2>
           <p className="word-count">Word Count: {wordCounts["a"]}</p>
           <p>
-            Is mathematics discovered, like how an archaeologist will unearth fossils to discover 
-            a truth we could not record, or is it made, akin to an artist creating a piece on a 
-            blank canvas? Philosophers have been debating this topic for centuries. Platonism, 
-            another name for mathematical realism, holds that mathematical facts and objects are 
-            merely waiting to be discovered outside of the human mind. Formalism, on the other hand, 
-            holds that mathematics is a human-made tool - a set of rules and symbols meant to help us 
-            understand the world. To understand the nature of mathematics and how we use it in many 
-            scientific fields, this article examines two conflicting perspectives to determine whether 
-            mathematics reveals basic facts about the universe or is just a human framework applied to 
-            it.
+            Was mathematics discovered, similar to how an archaeologist will unearth fossils to gain an 
+            understanding of a world we could not record, or was it made, akin to an artist painting his 
+            mind to a canvas. This has been a topic of debate for philosophers for centuries. Platonism is 
+            the idea that mathematical facts and objects are merely waiting to be discovered outside of the 
+            human mind, whereas formalism is the idea that mathematics is a human-made-tool – a set of rules 
+            and symbols meant to help us understand the world around us. The understand the nature of mathematics, 
+            and how we use it in many scientific fields, this article examines two conflicting perspectives to 
+            determine whether mathematics reveals basic facts about the universe or is just a human framework 
+            applied to it.
           </p>
         </section>
 
@@ -128,21 +127,21 @@ function App() {
           <h2>Mathematics as a Universal Truth</h2>
           <p className = "word-count">Word Count: {wordCounts["ut"]}</p>
           <p>
-            The notion of mathematical realism explains that mathematics exists independently of human 
-            cognition and is an intrinsic component of the universe. The philosopher Plato and the physicist 
-            Galileo, who described mathematics as the "language of the universe" (Galilei, 1623), are 
-            proponents of this theory. Examples of natural structures that commonly make use of mathematical 
-            concepts like the Fibonacci sequence and the Golden Ratio are the spirals of galaxies and the 
-            arrangement of leaves on a stem. These trends suggest that mathematics is not only a human 
-            invention but is embedded in the fundamental structure of nature.
+            To elaborate, the idea of mathematical realism is that mathematics exist independently of human 
+            cognition, and is an intrinsic component of the universe. The philosopher Plato and the physicist 
+            Galileo, who described mathematics as the “language of the universe” (Galilei, 1623), are proponents 
+            of this theory. There are many examples of mathematics found in nature, for example concepts such as 
+            the Fibonacci sequence and the Golden ratio are the spirals of galaxies and the arrangement of leaves 
+            on a stem. These trends suggest that mathematics is not only a human invention but is embedded in the 
+            fundamental structure of nature.
           </p><p>
-            Physics is often in favour of this view. Natural processes are surprisingly accurately described 
-            by the mathematical formulas that constitute the basis of the laws of physics. For instance, 
-            Einstein's theory of relativity uses complex mathematics to explain how spacetime warps. Einstein 
-            (1915) asserted that the theory is accurate enough in forecasting actual occurrences, like the 
-            bending of light around massive objects, to imply that mathematics must reflect a fundamental 
-            order in the universe. Arithmetic is a fundamental truth, according to mathematical realism, which 
-            maintains that these patterns and principles are "discovered," not manufactured.
+            Physics is often in favour of this view. Natural processes are surprisingly accurately described by the 
+            mathematical formulas that follow the basis of the laws of physics. For example, Einsteins theory of 
+            relativity uses complex mathematics to explain how spacetime warps. Einstein (1915) asserted that the theory 
+            is accurate enough in forecasting actual occurrences, like the bending of light around massive objects. He 
+            managed to mathematically prove the existence of black holes years before the first one was ever discovered. 
+            There are many cases where scientists could use arithmetic and mathematics to prove things in nature that 
+            had not yet been observed.
           </p>
         </section>
 
@@ -236,7 +235,7 @@ function App() {
           <h2>Video of powerpoint presentation</h2>
 
           <video controls width = "100%">
-            <source src="/videoo.mp4" type="video/mp4"/>
+            <source src="videoo.mp4" type="video/mp4"/>
           </video>
 
         </section>
