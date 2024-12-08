@@ -25,7 +25,7 @@ function App() {
         sectionWordCount += calculateWordCount(text);
       });
   
-      counts[section.id] = sectionWordCount;
+      counts[section.id] = sectionWordCount - 1;
       totalCount += sectionWordCount;
     });
   
