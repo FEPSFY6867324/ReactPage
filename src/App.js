@@ -15,17 +15,24 @@ function App() {
     const sections = document.querySelectorAll('.section');
     const counts = {};
     let totalCount = 0;
-
+  
     sections.forEach(section => {
-      const text = section.innerText || section.textContent;
-      const wordCount = calculateWordCount(text);
-      counts[section.id] = wordCount;
-      totalCount += wordCount;
+      const paragraphs = section.querySelectorAll('p:not(.word-count)');
+      let sectionWordCount = 0;
+  
+      paragraphs.forEach(paragraph => {
+        const text = paragraph.innerText || paragraph.textContent;
+        sectionWordCount += calculateWordCount(text);
+      });
+  
+      counts[section.id] = sectionWordCount;
+      totalCount += sectionWordCount;
     });
-
+  
     wordCounter(counts);
     setTotalWordCount(totalCount);
-  }, []);
+  });
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -130,7 +137,7 @@ function App() {
           <p>
             To elaborate, the idea of mathematical realism is that mathematics exist independently of human 
             cognition, and is an intrinsic component of the universe. The philosopher Plato and the physicist 
-            Galileo, who described mathematics as the “language of the universe” (Galilei, 1623), are proponents 
+            Galileo, who described mathematics as the “language of the universe”, are proponents 
             of this theory. There are many examples of mathematics found in nature, for example concepts such as 
             the Fibonacci sequence and the Golden ratio are the spirals of galaxies and the arrangement of leaves 
             on a stem. These trends suggest that mathematics is not only a human invention but is embedded in the 
@@ -138,10 +145,10 @@ function App() {
           </p><p>
             Physics is often in favour of this view. Natural processes are surprisingly accurately described by the 
             mathematical formulas that follow the basis of the laws of physics. For example, Einsteins theory of 
-            relativity uses complex mathematics to explain how spacetime warps. Einstein (1915) asserted that the theory 
+            relativity uses complex mathematics to explain how spacetime warps. Einstein asserted in 1915 that the theory 
             is accurate enough in forecasting actual occurrences, like the bending of light around massive objects. He 
             managed to mathematically prove the existence of black holes years before the first one was ever discovered. 
-            There are many cases where scientists could use arithmetic and mathematics to prove things in nature that 
+            There are many cases where scientists could use arithmetics and mathematics to prove things in nature that 
             had not yet been observed.
           </p>
         </section>
@@ -155,14 +162,14 @@ function App() {
             mathematics only occurs in the human mind. Different cultures and historical periods have created 
             their own systems and symbols for mathematics. Different societies have different mathematical 
             frameworks. For instance, the Egyptians employed a base-10 counting system, which is similar to 
-            ours, whereas the Babylonians utilised a base-60 system (Kline, 1990).
+            ours, whereas the Babylonians utilised a base-60 system.
           </p><p>
             Human needs and applications are also accommodated by mathematics. Think about non-Euclidean 
-            geometries, which describe curved spaces in a different way from the well-known Euclidean system 
-            (the geometry of flat surfaces). In order to solve problems in advanced physics, particularly when 
-            describing spacetime, non-Euclidean geometry was created. The idea that math is a flexible instrument 
-            created by humans rather than a rigid set of universal truths is supported by mathematicians' ability 
-            to develop new systems that adapt to particular circumstances (Lobachevsky, 1829).
+            geometries, which describe curved spaces in a different way from the well-known Euclidean system.
+            In order to solve problems in advanced physics, particularly when describing spacetime, non-Euclidean 
+            geometry was created. The idea that math is a flexible instrument created by humans rather than a rigid 
+            set of universal truths is supported by mathematicians' ability to develop new systems that adapt to 
+            particular circumstances.
           </p><p>
             Additionally, computer science and algorithmic logic highlight the value of mathematics as a human 
             framework. Algorithms, the cornerstone of programming, are developed to solve specific problems and 
@@ -178,12 +185,12 @@ function App() {
           <p className = "word-count">Word Count: {wordCounts["ec"]}</p>
           <p>
             Engineering and computers can provide useful insights into mathematics as a tool and a universal truth. 
-            Engineers use mathematics to design everything, from software systems to bridges, where precision is 
+            Engineers use mathematics to design everything, from softwares and systems, to bridges, where precision is 
             crucial for both operation and safety. But as engineering makes use of models and approximations, maths 
             is a practical tool meant to accomplish certain goals rather than a perfect representation of reality. 
             For instance, engineers approximate pi, despite the fact that it is an irrational, infinite decimal, in 
             order to facilitate computations. This illustration shows how engineering mathematics is tailored to human 
-            requirements and how exact numbers are regularly changed for practicality (Bridgman, 1927).
+            requirements and how exact numbers are regularly changed for practicality.
           </p><p>
             Computing algorithms and data structures demonstrate how mathematics may be modified to satisfy human 
             needs. Computers simulate neural networks based on mathematical models that mimic human cognition. 
