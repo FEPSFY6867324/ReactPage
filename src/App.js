@@ -214,23 +214,12 @@ function App() {
         <section id = "r" className = {`section ${activeSection === "r" ? "active" : ""}`}>
           <h2>References</h2>
           <ul>
-            <li>Plato, 2002. The Republic (Trans. B. Jowett)</li>
+            <li><a href="https://www.cambridge.org/core/journals/bulletin-of-symbolic-logic/article/abs/machines-logic-and-quantum-physics/62C86B95A8E2D5C62CDB9849DE882019" target="_blank" rel="noopener noreferrer">Deutsch, D., Ekert, A. and Lupacchini, R. (2000). Machines, Logic and Quantum Physics. Bulletin of Symbolic Logic, 6(3), pp.265–283</a></li>
             <li>Galilei, G., 1623. The Assayer (Il Saggiatore)</li>
             <li>Livio, M., 2002. The Golden Ratio: The Story of Phi, the World's Most Astonishing Number.</li>
             <li>Sprott, J. C., 2003. The Joy of x: A Guided Tour of Math, from One to Infinity</li>
             <li>Einstein, A., 1915. The General Theory of Relativity</li>
             <li>Hilbert, D., 1900. Mathematical Problems</li>
-            <li>Kline, M., 1990. Mathematical Thought from Ancient to Modern Times</li>
-            <li>Lobachevsky, N. I., 1829. Geometrical Investigations on the Theory of Parallels</li>
-            <li>Knuth, D., 1997. The Art of Computer Programming</li>
-            <li>Bridgman, P. W., 1927. The Physics of High Pressure</li>
-            <li>Borwein, J. M. and Bailey, D. H., 2003. Mathematics and Modern Engineering Applications</li>
-            <li>Cormen, T. H., Leiserson, C. E., Rivest, R. L. and Stein, C., 2009</li>
-            <li>Tymoczko, T., 1998. The Philosophy of Mathematics: An Introduction</li>
-            <li>Lakatos, I., 1976. Proofs and Refutations: The Logic of Mathematical Discovery</li>
-            <li>Steiner, M., 2004. The Applicability of Mathematics as a Philosophical Problem</li>
-            <li>Descartes, R., 1637. Discourse on the Method</li>
-            <li>Wigner, E. P., 1960. The Unreasonable Effectiveness of Mathematics in the Natural Sciences</li>
           </ul>
         </section>
 
