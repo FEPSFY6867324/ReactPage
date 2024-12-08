@@ -2,13 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const [lastUpdated, setLastUpdated] = useState(new Date());
+  const [lastUpdated, setLastUpdated] = useState(
+    new Date(process.env.REACT_APP_LAST_UPDATED || Date.now())
+  );  
   const [timeGoneBy, settimeGoneBy] = useState("");
   const [activeSection, setActiveSection] = useState("");
   const [isSticky, setIsSticky] = useState(false);
   const calculateWordCount = (text) => {return text.split(/\s+/).filter(word => word.length > 0).length};
   const [wordCounts, wordCounter] = useState({});
   const [totalWordCount, setTotalWordCount] = useState(0);
+  
   
   useEffect(() => {
     const sections = document.querySelectorAll('.section');
@@ -90,7 +93,7 @@ function App() {
   return (
     <div className = "App">
       <header className = "App-header">
-        <h1>Is mathmatics discovered, or all just a construct of the mind</h1>
+        <h1>Is Mathmatics Discovered, Or All Just A Construct Of The Mind</h1>
         <p>Total Word Count: {totalWordCount}</p>
       </header>
       <main>
