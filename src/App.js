@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const [lastUpdated, setLastUpdated] = useState(
-    new Date(process.env.REACT_APP_LAST_UPDATED || Date.now())
-  );  
+  const [lastUpdated, setLastUpdated] = useState(new Date(process.env.REACT_APP_LAST_UPDATED || Date.now()));  
   const [timeGoneBy, settimeGoneBy] = useState("");
   const [activeSection, setActiveSection] = useState("");
   const [isSticky, setIsSticky] = useState(false);
@@ -116,10 +114,10 @@ function App() {
           <p>
             Was mathematics discovered, similar to how an archaeologist will unearth fossils to gain an 
             understanding of a world we could not record, or was it made, akin to an artist painting his 
-            mind to a canvas. This has been a topic of debate for philosophers for centuries. Platonism is 
+            mind on a canvas. This has been a topic of debate for philosophers for centuries. Platonism is 
             the idea that mathematical facts and objects are merely waiting to be discovered outside of the 
             human mind, whereas formalism is the idea that mathematics is a human-made-tool – a set of rules 
-            and symbols meant to help us understand the world around us. The understand the nature of mathematics, 
+            and symbols meant to help us understand the world around us. To understand the nature of mathematics, 
             and how we use it in many scientific fields, this article examines two conflicting perspectives to 
             determine whether mathematics reveals basic facts about the universe or is just a human framework 
             applied to it.
@@ -214,12 +212,15 @@ function App() {
         <section id = "r" className = {`section ${activeSection === "r" ? "active" : ""}`}>
           <h2>References</h2>
           <ul>
-            <li><a href="https://www.cambridge.org/core/journals/bulletin-of-symbolic-logic/article/abs/machines-logic-and-quantum-physics/62C86B95A8E2D5C62CDB9849DE882019" target="_blank" rel="noopener noreferrer">Deutsch, D., Ekert, A. and Lupacchini, R. (2000). Machines, Logic and Quantum Physics. Bulletin of Symbolic Logic, 6(3), pp.265–283</a></li>
-            <li>Galilei, G., 1623. The Assayer (Il Saggiatore)</li>
-            <li>Livio, M., 2002. The Golden Ratio: The Story of Phi, the World's Most Astonishing Number.</li>
-            <li>Sprott, J. C., 2003. The Joy of x: A Guided Tour of Math, from One to Infinity</li>
-            <li>Einstein, A., 1915. The General Theory of Relativity</li>
-            <li>Hilbert, D., 1900. Mathematical Problems</li>
+            <li><a href="https://www.britannica.com/science/philosophy-of-mathematics/Logicism-intuitionism-and-formalism" target="_blank" rel="noopener noreferrer">Encyclopedia Britannica. (n.d.). Philosophy of mathematics - Logicism, intuitionism, and formalism (Accessed: 1 December 2024)</a></li>
+            <li><a href="https://www.cambridge.org/core/journals/bulletin-of-symbolic-logic/article/abs/machines-logic-and-quantum-physics/62C86B95A8E2D5C62CDB9849DE882019" target="_blank" rel="noopener noreferrer">Deutsch, D., Ekert, A. and Lupacchini, R. (2000). Machines, Logic and Quantum Physics. Bulletin of Symbolic Logic, 6(3), pp.265–283 (Accessed: 1 December 2024)</a></li>
+            <li><a href="https://plato.stanford.edu/entries/plato/">Kraut, R. (2004). Plato (Stanford Encyclopedia of Philosophy). [online] Stanford.edu (Accessed: 1 December 2024)</a></li>
+            <li><a href="https://insteading.com/blog/fibonacci-sequence-in-nature/">Keiren (2017). The Fibonacci Sequence in Nature. [online] Insteading (Accessed: 1 December 2024)</a></li>
+            <li><a href="https://www.history.com/news/black-holes-albert-einstein-theory-relativity-space-time">O’Neill, I. (2019). Black Holes Were Such an Extreme Concept, Even Einstein Had His Doubts. [online] HISTORY (Accessed: 1 December 2024)</a></li>
+            <li><a href="https://www.storyofmathematics.com/egyptian.html/">Mastin, L. (2020). Egyptian Mathematics - Numbers & Numerals. [online] The Story of Mathematics - A History of Mathematical Thought from Ancient Times to the Modern Day (Accessed: 1 December 2024)</a></li>
+            <li><a href="https://www.researchgate.net/publication/255634738_M_elange_turbulent_de_fluides_sous_l'effet_de_la_gravit_e_dans_un_tube_inclin_e">JEMIL ZNAIEN, MOISY, E. and HULIN, J.-P. (n.d.). M´ elange turbulent de fluides sous l’effet de la gravit´ e dans un tube inclin´ e. [online] (Accessed: 1 December 2024)</a></li>
+            <li><a href="https://iejse.com/journals/index.php/iejse/article/view/157">Dr. David Rosangliana (2024). HISTORY AND APPLICATIONS OF PI (π). International Educational Journal of Science and Engineering, [online] 7(11) (Accessed: 1 December 2024)</a></li>
+            <li><a href="https://medium.com/@brechtcorbeel/how-does-advanced-mathematics-influence-modern-technology-and-innovation-f868b1bb438d">Brecht Corbeel (2024). How Does Advanced Mathematics Influence Modern Technology and Innovation? [online] Medium (Accessed: 1 December 2024)</a></li>
           </ul>
         </section>
 
